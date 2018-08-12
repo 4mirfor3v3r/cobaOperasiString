@@ -1,5 +1,7 @@
 package j11;
 
+import java.util.Locale;
+
 public class cobaOprerasiString {
     public static void main(String[] argas){
     String identitas = "Ahmad Amirudin / X-RPL3 / 02";
@@ -62,6 +64,11 @@ public class cobaOprerasiString {
         for(int i = 0; i<arrTr.length;i++){
             System.out.println(arrTr[i]);
         }
+      
+        double d = 1545454000;
+        System.out.println(String.format("Uang saya %,.4f", d));
+        
+        System.out.println(String.format(Locale.forLanguageTag("in-ID"),"uang saya Rp %,.2f", d));
         
     }
 }
